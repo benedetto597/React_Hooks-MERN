@@ -72,3 +72,13 @@ _____
 
 ____
 
+### Conceptos básicos de React
+1. ¿ Qué es un componente?
+    * Pequeña pieza de código encapsulada re-utilizable que puede tener estado o no
+2. ¿ Qué es un estado?
+   * Es una variable que se actualiza en tiempo real, en otras palabras, el estado es como se encuentra la información del componente en un momento determinado del tiempo
+3. ¿ Qué es un router?
+   * Es un componente que permite navegar entre distintas páginas sin refrescar la página entera, dentro de un router se pueden tener páginas
+4. ¿ Qué es una propiedad?
+   * Es una variable que se pasa como parámetro a un componente
+
