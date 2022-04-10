@@ -80,5 +80,75 @@ ____
 3. ¿ Qué es un router?
    * Es un componente que permite navegar entre distintas páginas sin refrescar la página entera, dentro de un router se pueden tener páginas
 4. ¿ Qué es una propiedad?
-   * Es una variable que se pasa como parámetro a un componente
+   * Es una variable que se pasa como parámetro a un componente, sirve para comunicarse entre componentes. Los componentetes tienen padres, los cuales son los llamados a esos componentes
+      ```jsx
+      ReactDOM.render(
+         <App />
+         document.getElementById('root')
+      )
+      ```
+### Snipets útiles en React 
+* [React Snippets](https://marketplace.visualstudio.com/items?itemName=formulahendry.react-snippets)
 
+1. rafcp --> Crea un componente con la validación de tipos de los props y exportación por defecto
+______
+### Comandos utiles ```npm```
+
+* Resolver problemas de dependencias
+
+```js
+npm install --legacy-peer-deps
+npm install
+npm run start:dev
+```
+
+### Comandos utiles ```nest```
+
+_____
+* Generador de CRUD completo
+
+```js
+nest g resource <nombreEntidad>
+```
+
+_____
+_____
+### Resolución de errores Postman
+
+* Evitar el error al crear evento --> "message": "Invalid param id. Number expected"
+
+```js
+@Crud({
+    model: {
+        type: Event 
+  }, 
+  params: {
+      id: {
+          field: 'id',
+        type: 'number',
+        primary: true,
+        disabled: true, // <= DESHABILITAR EL ID
+    }
+  }
+})
+```
+______
+### Bibliografía
+#### NEST JS
+
+[Documentation](https://docs.nestjs.com/)
+
+[Class-Validator](https://github.com/typestack/class-validator#passing-options)
+
+[Controllers Documentation](https://github.com/nestjsx/crud/wiki/Controllers#params)
+
+[Ejemplo Práctico](https://github.com/lujakob/nestjs-realworld-example-app)
+
+[Controllers Documentation]()
+
+#### Type ORM
+
+[Entities Documentation](https://typeorm.io/#/entities)
+
+#### React JS Documentation
+[React Roadmap](https://roadmap.sh/react)
