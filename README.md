@@ -87,6 +87,29 @@ ____
          document.getElementById('root')
       )
       ```
+5. ¿ Qué es un Hook?
+    * Es una funcion con una estructura especifica, para la cual se necesita importar un use{Algo} por ejemplo useState (useState es un hook)
+    ```jsx
+    const useState = () => {
+        const [state, setState] = React.useState(0)
+        return [state, setState]
+    }
+    ```
+6. ¿ Qué son las pruebas unitarias?
+    * Enfocadas en pequeñas funcionalidades
+7. ¿ Qué es una prueba de integración?
+   * Enfocadas en una aplicación completa, es decir, enfocadas en como reaccionan varias funcionalidades en conjunto
+8. Características de las pruebas
+    1. Fácil de escribir
+    2. Fácil de leer
+    3. Confiables
+    4. Rápidas
+    5. Principalmente unitarias
+9. ¿ Qué es AAA?
+   * Arrange, Act, Assert o Arreglar, Actuar y Afirmar.
+        1. Arrange | Arreglar: Inicializar variables, importaciones necesarias, preparar el entorno para la prueba
+        2. Act | Actuar: Llamar métodos, simular clicks, realizar acciones sobre el paso anterior
+        3. Assert | Afirmar: Observar los resultados 
 ### Snipets útiles en React 
 * [React Snippets](https://marketplace.visualstudio.com/items?itemName=formulahendry.react-snippets)
 
@@ -104,14 +127,11 @@ npm run start:dev
 
 ### Comandos utiles ```nest```
 
-_____
 * Generador de CRUD completo
 
 ```js
 nest g resource <nombreEntidad>
 ```
-
-_____
 _____
 ### Resolución de errores Postman
 
@@ -133,7 +153,20 @@ _____
 })
 ```
 ______
+______
 ### Bibliografía
+
+#### Modern JS Documentation
+
+[Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+[Promises](https://developer.mozilla.org/es/docs/web/javascript/reference/global_objects/promise)
+[Array find](https://developer.mozilla.org/es/docs/web/javascript/reference/global_objects/array/find)
+[Array filter](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+[Array map](https://developer.mozilla.org/es/docs/web/javascript/reference/global_objects/array/map)
+[Destructuracion](https://developer.mozilla.org/es/docs/web/javascript/reference/operators/destructuring_assignment)
+
+
+
 #### NEST JS
 
 [Documentation](https://docs.nestjs.com/)
@@ -144,11 +177,22 @@ ______
 
 [Ejemplo Práctico](https://github.com/lujakob/nestjs-realworld-example-app)
 
-[Controllers Documentation]()
 
 #### Type ORM
 
 [Entities Documentation](https://typeorm.io/#/entities)
 
-#### React JS Documentation
+#### React JS
 [React Roadmap](https://roadmap.sh/react)
+
+[React Documentation](https://es.reactjs.org/docs/events.html)
+
+[Create React App Documentation](https://create-react-app.dev/docs/getting-started/)
+
+[Jest Documentation](https://jestjs.io/)
+
+[Enzyme Adapter React 17](https://github.com/wojtekmaj/enzyme-adapter-react-17)
+
+[Ezyme Documentation](https://enzymejs.github.io/enzyme/)
+
+[Enzyme To JSON](https://www.npmjs.com/package/enzyme-to-json)
